@@ -1,0 +1,80 @@
+import React from 'react';
+
+const AboutUs = () => {
+  return (
+    <section className="bg-[#1a0a2e] min-h-screen flex items-center py-20 px-6 lg:px-12">
+      <div className="max-w-7xl mx-auto w-full">
+
+        {/* Header */}
+        <div className="text-center mb-14">
+          <p className="text-[#c084fc] font-medium tracking-widest uppercase text-sm mb-3">
+            Who We Are
+          </p>
+          <h1 className="text-4xl lg:text-5xl font-bold text-white">
+            About <span className="text-[#c084fc]">Us</span>
+          </h1>
+        </div>
+
+        {/* Content Grid */}
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+
+          {/* Left - Text */}
+          <div className="space-y-6">
+            <h2 className="text-2xl font-bold text-white leading-snug">
+              We Believe Fashion Should Be <span className="text-[#c084fc]">For Everyone</span>
+            </h2>
+            <p className="text-white/60 leading-relaxed">
+              E-commerce Fashion was founded in 2020 with a simple mission — to make premium quality clothing accessible to everyone in Bangladesh. We source the finest fabrics and work with skilled designers to bring you styles that are both trendy and timeless.
+            </p>
+            <p className="text-white/60 leading-relaxed">
+              From casual everyday wear to formal occasions, we have got something for every mood, every season, and every budget. We are proud to serve thousands of happy customers across the country.
+            </p>
+
+            {/* Stats */}
+            <div className="grid grid-cols-3 gap-6 pt-4 border-t border-white/10">
+              {[
+                { val: '5+', label: 'Years Experience' },
+                { val: '10K+', label: 'Happy Customers' },
+                { val: '500+', label: 'Styles Available' },
+              ].map((stat) => (
+                <div key={stat.label} className="text-center">
+                  <p className="text-3xl font-black text-[#c084fc]">{stat.val}</p>
+                  <p className="text-white/40 text-xs mt-1">{stat.label}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Right - Visual */}
+          <div className="grid grid-cols-2 gap-4">
+            {[
+              { emoji: '👗', label: 'Women\'s Fashion' },
+              { emoji: '👔', label: 'Men\'s Wear' },
+              { emoji: '👖', label: 'Casual & Denim' },
+              { emoji: '🧥', label: 'Winter Collection' },
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="bg-white/5 border border-white/10 rounded-2xl p-6 flex flex-col items-center gap-3 hover:border-[#c084fc]/50 transition-all duration-300"
+              >
+                <span className="text-4xl">{item.emoji}</span>
+                <p className="text-white/60 text-sm text-center">{item.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Mission */}
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-8 text-center">
+          <p className="text-[#c084fc] text-sm uppercase tracking-widest mb-3">Our Mission</p>
+          <p className="text-white text-xl font-medium max-w-2xl mx-auto leading-relaxed">
+            To bring premium, affordable fashion to every doorstep in Bangladesh — with love, quality, and care.
+          </p>
+        </div>
+
+      </div>
+    </section>
+  );
+};
+
+export default AboutUs;
