@@ -9,24 +9,14 @@ export default function Footer() {
 
   const quickLinks = [
     { name: 'Home', href: '/' },
+    { name: 'All Products', href: '/allproducts' },
     { name: 'About', href: '/about' },
-    { name: 'Booking', href: '/booking' },
-    { name: 'My Booking', href: '/my-booking' },
+    { name: 'Contact us', href: '/contact' },
   ];
 
-  const services = [
-    { name: 'Baby Care', href: '/services/baby-care' },
-    { name: 'Elderly Service', href: '/services/elderly-service' },
-    { name: 'Sick People Service', href: '/services/sick-people-service' },
-    { name: 'Emergency Care', href: '/services/emergency-care' },
-  ];
 
-  const support = [
-    { name: 'Contact Us', href: '/contact' },
-    { name: 'FAQs', href: '/faqs' },
-    { name: 'Privacy Policy', href: '/privacy' },
-    { name: 'Terms & Conditions', href: '/terms' },
-  ];
+
+  
 
   return (
     <footer className="bg-[#B8A5D4] text-[#2D1B5A]">
@@ -37,13 +27,14 @@ export default function Footer() {
           <div>
             <div className="">
               <Link href="/" className="inline-block">
-               
-                  <Image alt='logo' src={logo1} width={80}></Image>
-                
+
+                <Image alt='logo' src={logo1} width={80}></Image>
+
               </Link>
             </div>
             <p className="text-[#2D1B5A]/80 mb-4 leading-relaxed">
-              Providing compassionate, professional care services with love, dedication, and expertise.
+              From casual tees to formal shirts — discover premium clothing for every occasion at the best prices.
+              Crafted with comfort, quality, and timeless style to elevate your everyday wardrobe.
             </p>
             {/* Social Media */}
             <div className="flex space-x-4">
@@ -105,24 +96,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Services */}
-          {/* <div>
-            <h3 className="text-lg font-bold text-[#2D1B5A] mb-4">Our Services</h3>
-            <ul className="space-y-2">
-              {services.map((service) => (
-                <li key={service.name}>
-                  <Link
-                    href={service.href}
-                    className="text-[#2D1B5A]/80 hover:text-[#2D5016] transition duration-200 inline-flex items-center group"
-                  >
-                    <span className="group-hover:translate-x-1 transition-transform inline-block">
-                      {service.name}
-                    </span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div> */}
+        
 
           {/* Contact & Support */}
           <div>
@@ -138,7 +112,7 @@ export default function Footer() {
                 <svg className="w-5 h-5 text-[#2D1B5A] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                <span className="text-[#2D1B5A]/80">info@trustcare.com</span>
+                <span className="text-[#2D1B5A]/80">info@e-commerce.com</span>
               </li>
               <li className="flex items-start space-x-3">
                 <svg className="w-5 h-5 text-[#2D1B5A] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -148,11 +122,11 @@ export default function Footer() {
                 <span className="text-[#2D1B5A]/80">Chattogram, Bangladesh</span>
               </li>
             </ul>
-            
+
           </div>
         </div>
 
-       
+
 
         {/* Bottom Bar */}
         <div className="border-t border-[#2D1B5A]/20 pt-8">
