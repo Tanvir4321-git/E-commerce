@@ -65,37 +65,37 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div className={`md:hidden ${isOpen ? 'block' : 'hidden'}`}>
-        <div className="px-2 pt-2 pb-3 space-y-2 sm:px-3 bg-[#A5C89E]">
-          <Link
+        <div className="px-2 pt-2 pb-3 space-y-2 sm:px-3 bg-[#A5C89E] flex flex-col">
+          <Navlink
             href="/"
-            className="text-[#2D5016] hover:bg-[#7DAA6F] hover:text-white block px-3 py-2 rounded-md text-base font-medium transition duration-200"
-            onClick={() => setIsOpen(false)}
+           
+            onClick={() =>  setIsOpen(false)}
           >
             Home
-          </Link>
-          <Link
+          </Navlink>
+          <Navlink
+            href="/allproducts"
+           
+            onClick={() => setIsOpen(false)}
+          >
+            All products
+          </Navlink>
+          <Navlink
             href="/about"
-            className="text-[#2D5016] hover:bg-[#7DAA6F] hover:text-white block px-3 py-2 rounded-md text-base font-medium transition duration-200"
+            
             onClick={() => setIsOpen(false)}
           >
             About
-          </Link>
-          <Link
-            href="/booking"
-            className="text-[#2D5016] hover:bg-[#7DAA6F] hover:text-white block px-3 py-2 rounded-md text-base font-medium transition duration-200"
+          </Navlink>
+          <Navlink
+            href="/contact"
+           
             onClick={() => setIsOpen(false)}
           >
-            Booking
-          </Link>
-          <Link
-            href="/my-booking"
-            className="text-[#2D5016] hover:bg-[#7DAA6F] hover:text-white block px-3 py-2 rounded-md text-base font-medium transition duration-200"
-            onClick={() => setIsOpen(false)}
-          >
-            My Booking
-          </Link>
+            COntact us
+          </Navlink>
 
-          {/* Mobile Login/Signup Buttons */}
+     
          
 
         </div>

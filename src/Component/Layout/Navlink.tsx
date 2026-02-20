@@ -6,9 +6,10 @@ import { ReactNode } from 'react';
 type NavlinkProps = {
   href: string;
   children: ReactNode;
+     onClick?: () => void;
 };
 
-const Navlink = ({ href, children }: NavlinkProps) => {
+const Navlink = ({ href, children, onClick }: NavlinkProps) => {
   const pathname = usePathname();
 
   const isActive =
@@ -18,6 +19,7 @@ const Navlink = ({ href, children }: NavlinkProps) => {
 
   return (
     <Link
+    onClick={onClick}
       href={href}
       className={`px-4 py-2 rounded-md font-medium transition-all duration-200 ${
         isActive 
@@ -26,6 +28,7 @@ const Navlink = ({ href, children }: NavlinkProps) => {
       }`}
     >
       {children}
+       
     </Link>
   );
 };
