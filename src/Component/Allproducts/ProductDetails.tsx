@@ -3,6 +3,7 @@
 import { useParams } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
+import { toast } from 'react-toastify';
 
 type Product = {
   id: number;
@@ -97,7 +98,7 @@ const ProductDetails = () => {
             </div>
 
             {/* Action Button */}
-            <button className="w-full bg-[#7c3aed] hover:bg-[#6d28d9] text-white font-semibold py-4 rounded-xl transition-colors duration-200 text-base">
+            <button onClick={()=>toast('Successfully add to cart')} className="w-full bg-[#7c3aed] hover:bg-[#6d28d9] text-white font-semibold py-4 rounded-xl transition-colors duration-200 text-base">
               Add to Cart
             </button>
 

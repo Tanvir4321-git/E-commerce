@@ -24,7 +24,10 @@ const AllProducts = () => {
           </p>
         </div>
 
-      <Allproducts></Allproducts>
+
+        <Allproducts></Allproducts>
+
+
 
       </div>
     </section>

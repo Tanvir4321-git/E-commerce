@@ -56,7 +56,7 @@ export default function Banner() {
             </div>
 
             {/* Bottom center View Collection button */}
-            <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2">
+            <div className=" flex justify-center mt-24 mb-4  items-center gap-2">
                 <Link
                     href="/allproducts"
                     className="bg-white/10 backdrop-blur-sm border border-white/20 text-white px-10 py-3 rounded-full font-semibold hover:bg-white/20 transition-all duration-200 text-sm tracking-wide"

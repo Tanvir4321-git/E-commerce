@@ -104,7 +104,7 @@ const Ourproducts = () => {
                       ${product.price}
                     </span>
                     <Link
-                      href={`/products/${product.id}`}
+                      href={`/allproducts/${product.id}`}
                       className="bg-[#7c3aed] hover:bg-[#6d28d9] text-white text-xs px-4 py-2 rounded-full transition-colors duration-200 font-medium"
                     >
                       Details
