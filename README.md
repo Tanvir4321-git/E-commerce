@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="cover.png" alt="MERN Stack Developer Banner" width="100%">
+</p>
 
 
 E-commerce - Online Dress Shop
