@@ -132,7 +132,7 @@ export default function Footer() {
         <div className="border-t border-[#2D1B5A]/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-[#2D1B5A]/80 text-sm">
-              © {currentYear} TrustCare. All rights reserved.
+              © {currentYear} E-commerce. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
               <Link href="/privacy" className="text-[#2D1B5A]/80 hover:text-[#2D5016] transition duration-200">

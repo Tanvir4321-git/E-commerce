@@ -4,6 +4,7 @@ import { useParams } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { toast } from 'react-toastify';
+import Error from '@/app/error';
 
 type Product = {
   id: number;
@@ -52,7 +53,7 @@ const ProductDetails = () => {
     </section>
   );
 
-
+if (!products) return <h1 className='text-2xl flex items-center min-h-screen justify-center'>Products not found</h1>; 
 
   return (
     <section className="bg-[#1a0a2e] min-h-screen py-20 px-6 lg:px-12">
